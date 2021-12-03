@@ -13,21 +13,13 @@ def find(needle):
 
     filename = 'task01.txt'
     file = open(filename, 'r')
-    print(file)
-    data = file.read
-    print(data)
-    #count = (-1)
-    #for i in file:
-    #    count = count + 1
-    #    if input in i:
-    #        return count 
-    
- 
+    count = (-1)
+    for i in file:
+        count = count + 1
+        if needle in i:
+            return count
+
         
-
-
-    
-
 
 if __name__ == "__main__":
     assert find('apple') == 0
