@@ -8,8 +8,7 @@ def find(stock):
         if stock in i:
             count = count + 1
             test = i.strip()
-            linedata = test.split(",")
-            
+            linedata = test.split(",")           
             list1.append(linedata[1])
     if len(list1) > 1:
         print(f"There are {len(list1)} stocks with that symbol")
@@ -17,7 +16,6 @@ def find(stock):
         print(list1)
     elif len(list1) == 0:
         print("No matches")
-
 x = input("Enter stock symbol: ")
 find(x)
 
